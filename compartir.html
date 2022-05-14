@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--css connect-->
+    <link rel="stylesheet" href="compartirsyle.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>compartir</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="innomaker-icon.png" alt="Innomakers logo" class="logo"></a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="marketplace.html">Marketplace</a>
+                <a href="#">Para empresas</a>
+                <a href="#contact">contacto</a>
+                <a href="#"><i class="fas fa-search"></i></a>
+            </nav>  
+        </div>
+    </header>
+
+    <section>
+        <div class="container hero">
+            <h1>Comparte tus<br>experiencias</h1>
+            <form action="#foro">
+                <button type="submit">Comienza ya</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="slide">
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card1" id="cart1">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="pattern.png" alt="perfil">
+                        </div>
+                        <div class="name-description">
+                            <span class="name">Aprendizaje de un niño autista</span>
+                            <span class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed tempore autem earum? Illum incidunt quidem facilis, sunt soluta voluptatibus eveniet qui eos rem delectus quos autem adipisci nostrum, laborum reprehenderit.</span>
+                        </div>
+                        <div class="download">
+                            <form action="#">
+                                <button type="submit">Ver Mas</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card2">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="pattern.png" alt="catalogo">
+                        </div>
+                        <div class="name-description">
+                            <span class="name">Quiero aprender a programar sin utilizar mis manos</span>
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum animi delectus esse blanditiis facilis architecto voluptas reprehenderit excepturi in, quas quod consequatur enim unde laborum autem suscipit ullam, quam provident.</span>
+                        </div>
+                        <div class="download">
+                            <form action="#">
+                                <button type="submit">Ver mas</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card3">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="pattern.png" alt="catalogo">
+                        </div>
+                        <div class="name-description">
+                            <span class="name">¿Puede la medicina ser mas inclusiva?</span>
+                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum animi delectus esse blanditiis facilis architecto voluptas reprehenderit excepturi in, quas quod consequatur enim unde laborum autem suscipit ullam, quam provident.</span>
+                        </div>
+                        <div class="download">
+                            <form action="#">
+                                <button type="submit">Ver mas</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+    
+        <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    </section>
+
+    <section id="foro">
+        <div class="container share">
+            <h2>Comparte</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, reprehenderit! Nam illo doloremque assumenda aliquam totam possimus, earum consequuntur soluta ab ad quos, voluptates fuga minima libero! Sint, cupiditate pariatur?</p>
+            <form action="enviarforo.html"  target="_blank" id="foro">
+                <input type="search" name="titulo" placeholder="titulo" id="head" class="container">
+                <input type="search" name="cuerpo" placeholder="cuerpo" id="body" class="container">
+                <input id="button" type="submit" value="enviar">
+            </form>
+        </div>
+    </section>
+    
+
+</body>
+</html>
